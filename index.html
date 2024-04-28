@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Saver</title>
+  <link rel="stylesheet" href="UI/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div class="container">
+    <h1>Admin Works</h1>
+    <div id="loginForm">
+      <div class="login-form">
+        <h2>Login/Register</h2>
+        <button id="emailLinkAuth">Continue with Email</button>
+        <button id="googleAuth">Continue with Google </button>
+      </div>
+    </div>
+    <div id="passwordForm" style="display: none;">
+      <div class="password-form">
+        <input type="text" id="websiteInput" placeholder="Website/App Name" required>
+        <input type="text" id="usernameInput" placeholder="Username" required>
+        <input type="password" id="passwordInput" placeholder="Password" required>
+        <button id="savePasswordBtn">Save Password</button>
+      </div>
+      <div class="password-list">
+        <ul id="passwordList"></ul>
+        <button id="exportBtn">Export Passwords</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Firebase SDK -->
+  <script type="module" src="https://www.gstatic.com/firebasejs/10.11.1/firebase-app.js"></script>
+  <script type="module" src="https://www.gstatic.com/firebasejs/10.11.1/firebase-auth.js"></script>
+  <script type="module" src="https://www.gstatic.com/firebasejs/9.0.2/firebase-auth.js"></script>
+  <script type="module" src="JavaScript/app.js"></script>
+</body>
+</html>
